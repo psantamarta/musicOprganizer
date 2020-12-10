@@ -65,4 +65,12 @@ public class MusicOrganizer
             System.out.println("El número de canción indicado no existe. De introducir un numero entre el 0 y el " + (getNumberOfFiles()-1));
         }    
     }
+    
+    public boolean validIndex (int index){
+        boolean valido = false;
+        if(index >= 0 && index < files.size()) {
+            valido = true;
+        }
+        return valido;
+    }
 }
