@@ -61,8 +61,8 @@ public class MusicOrganizer
     }
 
     public void checkIndex(int index){
-        if (index < 0 || index > files.size()) {
-            System.out.println("El número de canción indicado no existe");
+        if (index < 0 || index > files.size()-1) {
+            System.out.println("El número de canción indicado no existe. De introducir un numero entre el 0 y el " + (getNumberOfFiles()-1));
         }    
     }
 }
